@@ -36,7 +36,7 @@ public class EdgeExistenceAPI extends TraversersAPI {
 
     @Override
     protected String type() {
-        return "edgeexistence";
+        return "edgeexist";
     }
 
     public List<Edge> get(Object sourceId, Object targetId, String edgeLabel,
