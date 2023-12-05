@@ -67,7 +67,6 @@ import org.junit.runners.Suite;
         RestoreApiTest.class,
         GraphsApiTest.class,
 
-        EdgeExistenceAPITest.class,
         CommonTraverserApiTest.class,
         KoutApiTest.class,
         KneighborApiTest.class,
@@ -86,6 +85,7 @@ import org.junit.runners.Suite;
         FusiformSimilarityApiTest.class,
         NeighborRankApiTest.class,
         PersonalRankApiTest.class,
+        EdgeExistenceAPITest.class,
 
         TargetApiTest.class,
         GroupApiTest.class,
