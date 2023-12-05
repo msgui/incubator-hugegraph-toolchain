@@ -25,7 +25,7 @@ jobs:
       USE_STAGE: 'true' # Whether to include the stage repository.
       TRAVIS_DIR: hugegraph-client/assembly/travis
       # TODO: replace it with the (latest - n) commit id (n >= 15)
-      COMMIT_ID: be6ee386b9939dc6bd6fcbdf2274b8acc3a0a314
+      COMMIT_ID: e8fb2696d6154f20fd4d6e45ca58763e69145116
     strategy:
       fail-fast: false
       matrix:
