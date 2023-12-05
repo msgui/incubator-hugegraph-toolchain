@@ -18,10 +18,12 @@
 package org.apache.hugegraph.api.traverser;
 
 
+import jdk.nashorn.internal.runtime.logging.Logger;
 import org.apache.hugegraph.api.graph.GraphAPI;
 import org.apache.hugegraph.client.RestClient;
 import org.apache.hugegraph.rest.RestResult;
 import org.apache.hugegraph.structure.graph.Edge;
+import org.apache.hugegraph.util.E;
 import org.apache.logging.log4j.util.Strings;
 
 import java.util.LinkedHashMap;
@@ -54,6 +56,8 @@ public class EdgeExistenceAPI extends TraversersAPI {
         if (limit > 0){
             params.put("limit", limit);
         }
+        E.checkArgument(true,
+                "EdgeExistenceAPI Path:"+this.path()+"  params:"+params);
         RestResult result = this.client.get(this.path(), params);
         return result.readList(this.type(), Edge.class);
     }
