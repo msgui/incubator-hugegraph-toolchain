@@ -56,8 +56,7 @@ public class EdgeExistenceAPI extends TraversersAPI {
         if (limit > 0){
             params.put("limit", limit);
         }
-        E.checkArgument(true,
-                "EdgeExistenceAPI Path:"+this.path()+"  params:"+params);
+        System.out.println("EdgeExistenceAPI Path:"+this.path() + "  params:"+params);
         RestResult result = this.client.get(this.path(), params);
         return result.readList(this.type(), Edge.class);
     }
