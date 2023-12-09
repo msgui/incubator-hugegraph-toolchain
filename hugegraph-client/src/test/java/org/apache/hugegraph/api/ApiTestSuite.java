@@ -50,6 +50,7 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
+        EdgeExistenceAPITest.class,
         PropertyKeyApiTest.class,
         VertexLabelApiTest.class,
         EdgeLabelApiTest.class,
@@ -85,7 +86,6 @@ import org.junit.runners.Suite;
         FusiformSimilarityApiTest.class,
         NeighborRankApiTest.class,
         PersonalRankApiTest.class,
-        EdgeExistenceAPITest.class,
 
         TargetApiTest.class,
         GroupApiTest.class,
