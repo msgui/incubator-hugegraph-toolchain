@@ -43,8 +43,10 @@ public class EdgeExistenceAPITest extends TraverserApiTest{
         Object markoId = getVertexId("person", "name", "marko");
         Object vadasId = getVertexId("person", "name", "vadas");
 
-        List<Edge> edges = edgeExistenceAPI.get(markoId, vadasId,"knows", "7JJ3CeW0", 100);
-
+//        List<Edge> edges = edgeExistenceAPI.get(markoId, vadasId,"knows", "7JJ3CeW0", 100);
+        List<Edge> edges = edgeExistenceAPI.get(markoId, vadasId,"", "", 100);
+        System.out.println(edges.get(0).name());
+        System.out.println(edges.get(0));
         Assert.assertEquals(1, edges.size());
         String id = edges.get(0).id();
 
